@@ -1,0 +1,459 @@
+.portfolio{
+  padding: 2% 3%;
+}
+.portfolio h2 {
+  color: rgba(9, 9, 9, 0.8);
+  display: block;
+  margin-bottom: 2%;
+  margin-left: 1%;
+}
+.button--container{
+  display: none;
+  display: flex;
+  gap: 5%;
+}
+.filter--button{
+  padding:1%;
+  border:none;
+  border-radius: 25px;
+  color: aliceblue;
+  background-color: #0f0e0e;
+  box-shadow: 5px 5px 5px -1px rgba(0, 0,0, 0.16),
+            -5px -5px 5px -1px rgba(10, 99, 169, 0.70);
+}
+.filter--button:hover{
+  transform: scale(1.1);
+  transition: all 0.8s ease-in-out;
+}
+.active{
+  background-color: rgb(126, 126, 242);
+  color: black;
+  box-shadow: inset 5px 5px 5px -1px rgba(10, 99, 169, 0.70),
+            inset -5px -5px 5px -1px rgba(10, 99, 169, 0.70);
+
+}
+.portfolio--content{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top:2%;
+  padding-left: 10%;
+  padding-right: 1%;
+}
+.item{
+  width: 27%;
+  height: 200px;
+  overflow: hidden;
+  display: none;
+  float: left;
+  margin: 1% 3%;
+  position: relative;
+  margin-right: 0%;
+  
+}
+.item img{
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  top: 0%;
+  
+}
+.item h4{
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+.item .detailP{
+  color: rgb(1, 1, 18);
+  position: absolute;
+  top: 40%;
+  left:5%;
+  width:90%;
+  max-height: 100%;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.8s ease-in;
+  padding: 1%;
+  overflow: hidden;
+}
+.detailP button{
+  position: absolute;
+  top:50%;
+  left:60%;
+}
+
+.item:hover img{
+  opacity: 0.3;
+  /* z-index: 0; */
+}
+.item:hover .detailP{
+  opacity: 1; 
+
+}
+.item:hover h4{
+  position: absolute;
+  opacity: 1;
+  top: 20%;
+}
+
+.detailPara {
+  /* display: none; */
+  transition: all 1.6 ease-in;
+}
+.investpenny,.filterbot,.rocket ,.Resale, .auto-shay, .tgAutomation, .cherryPay, 
+.buzzoids, .fluent, .legion, .investpenny, .marketing, .Giddyops{
+  display: none;
+}
+
+.show{
+  display:block;
+}
+.hidden{
+  display:none;
+}
+
+/* for detail paragraphs */
+.portfolio--detail{
+  background-color: #f5f5f5;
+  color: black;
+}
+.detail--info{
+  margin: 0% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3% 5%;  
+}
+
+.detailButton{
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: goldenrod;
+  background: linear-gradient(to bottom, #1e0376, #001111);
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(1, 14, 24, 0.4);
+  padding: 0%;
+}
+
+.head{
+  display: flex;
+  padding-left: 5%;
+  
+}
+
+.detailButton:hover{
+  transform: scale(1.2);
+  transition: all 0.7s ease-in
+}
+.port--card{
+  color: black;
+  background-color: lightgrey;
+  width:30%;
+  margin-left: 3%;
+  margin-bottom: 2%;
+  height: auto;
+}
+.detailPara h1{
+  font-family: "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 15px;
+  text-align: center
+}
+.Giddyops .project--view{
+  background-image: url('image/giddyops.png');
+  background-size: cover;
+  background-position: center center;
+
+  flex-basis: 45%;
+  animation: animate 16s ease-in-out;
+}
+
+@keyframes animate{
+  0%,100%{
+    background-image:url('image/giddyops.png');
+  }
+  25%{
+    background-image: url('image/Service-area-map.png');
+  }
+  50%{
+    background-image: url('image/Mockup\ -\ Applicant\ Portal.png');
+  }
+  75%{
+    background-image: url('image/_Mockup\ -\ Robust\ Admin\ Panel.png');
+  }
+}
+.marketing .project--view{
+  background-image: url('image/mark1.png');
+  background-size: cover;
+  background-position: center center;
+
+  flex-basis: 45%;
+  animation: market 16s ease-in-out;
+}
+@keyframes market{
+  0%{
+    background-image:url('image/mark1.png');
+  }
+  40%{
+    background-image: url('image/mark2.png');
+  }
+  90%{
+    background-image: url('image/mark3.jpg');
+  }
+}
+.investpenny .project--view{
+  background-image: url('image/penny1.png');
+  background-size: cover;
+  background-position: center center;
+
+  flex-basis: 45%;
+  animation: penny 16s ease-in-out;
+}
+@keyframes penny{
+  0%{
+    background-image:url('image/penny1.png');
+  }
+  40%{
+    background-image: url('image/penny2.png');
+  }
+  90%{
+    background-image: url('image/penny3.png');
+  }
+}
+.legion .project--view{
+  background-image: url('image/legion.jpg');
+  background-size: cover;
+  background-position: center center;
+
+  flex-basis: 45%;
+  
+}
+.fluent .project--view{
+  background-image: url('image/FluentEnglish_bot.jpg');
+  background-size: cover;
+  background-position: center center;
+  flex-basis: 45%;
+}
+.buzzoids .project--view{
+  background-image: url('image/BuzzoidsBot.jpg');
+  background-size: cover;
+  background-position: center center;
+
+  flex-basis: 45%;
+  animation: buzzoid 16s ease-in-out;
+}
+@keyframes buzzoid{
+  0%,100%{
+    background-image:url('image/BuzzoidsBot.jpg');
+  }
+  40%{
+    background-image: url('image/Buzzoid2.jpg');
+  }
+  90%{
+    background-image: url('image/buzzoid3.jpg');
+  }
+}
+.cherryPay .project--view{
+  background-image: url('image/CherryPay.png');
+  background-size: cover;
+  background-position: center center;
+  flex-basis: 45%;
+}
+.tgAutomation .project--view{
+  background-image: url('image/telegram_automation.png');
+  background-size: cover;
+  background-position: center center;
+  flex-basis: 45%;
+}
+.auto-shay .project--view{
+  background-image: url('image/auto-shay.png');
+  background-size: cover;
+  background-position: center center;
+  flex-basis: 45%;
+}
+.project--view{
+  display: block;
+}
+.Resale .project--view{
+  background-image: url('image/resale1.png');
+  background-size: cover;
+  background-position: center center;
+  flex-basis: 45%;
+}
+.rocket .project--view{
+  background-image: url('image/RoyalRocket.jpg');
+  background-size: cover;
+  background-position: center center;
+  flex-basis: 45%;
+}
+.filterbot .project--view{
+  background-image: url('image/filterbot.jpeg');
+  background-size: cover;
+  background-position: center center;
+  flex-basis: 45%;
+}
+.aboutPage--main{
+  background-image: url('image/whi.jpg');
+  height: 100vh;
+}
+.aboutPage,.aboutPage--main h1{
+ display: grid;
+ grid-template-columns: 30% 60%;
+ justify-content: space-around;
+ margin: 0% 2%;
+ padding: 0% !important;
+}
+
+.aboutPage img{
+  width: 100%;
+  height: fit-content;
+  margin-bottom:6% ;
+}
+.about--card{
+  color: rgb(2, 2, 73);
+}
+@media all and (max-width:650px) {
+  .item{
+    width: 40%;
+  }
+  .detail--info{
+    margin:0% ;
+  }
+  .port--card{
+    width: 40%;
+    /* margin:0%; */
+    padding: 0%;
+  }
+  .detailButton{
+    height: fit-content ;
+  }
+}
+@media all and (max-width:450px) {
+  .item{
+    width: 80%;
+  }
+  .port--card{
+    width: 80%;
+  }
+}
+.body_2{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #ced4da;
+    -webkit-text-size-adjust: 100%;
+    margin-top: auto;
+}
+.col{
+    padding:10px;
+
+}
+/* ul{
+    display:none;
+} */
+.card-body{
+    background-color: rgb(231, 231, 236);
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.5rem;
+}
+.card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.8rem;
+  transition: all 0.5s;
+  display: inline-block;
+  width: 100%;
+}
+.card:hover{
+  transform: scale(0.9);
+}
+#my-map-display img{
+  max-width:none!important;
+  background:none!important;
+  font-size: inherit;
+  font-weight:inherit;
+}
+#detail_1,#detail_2,#detail_3,#detail_4,#detail_5,#detail_6{
+  display: none;
+}
+#detailB_1,#detailB_2,#detailB_3,#detailB_4,#detailB_5,#detailB_6{
+  margin-top: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 70%;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgb(161, 136, 145);
+}
+/************************************ FONTS ************************************/
+@import url("https://use.typekit.net/ovt6ynt.css");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Spectral:wght@200;300;400;500;600;700;800&display=swap");
+
+.card,
+.body_2 {
+  display: flex;
+}
+
+.card > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+.card-title {
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 500 !important;
+  font-style: normal;
+}
+
+
+/* contact */
+#responce{
+  display: none;
+}
+section{
+  padding: 0%;
+  padding-top: 2%;
+
+}
+
+
+
+
+
+
+
