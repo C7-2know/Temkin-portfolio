@@ -1,523 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Temkin Mengistu - Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  
+ 
 </head>
 
 <body>
-   <section id="about" class="aboutPage--main">
-    <h1>About</h1>
-    <div class="aboutPage">
-      <div class='about--card'>
-        <img src="image/chapi.jpg" alt="profile pic">
-      </div>
-      <div class='about--card'>
-        <h1>Backend and Bot Developer</h1>
-        <p>Howdy 👋
-          I code art using python. I develop backend products for web and
-          mobile apps. Passionate about learning new things and sharing knowledge.
-          Experienced in AWS Cloud, Docker, and CI/CD. Mastering Django, Flask,
-          FastAPI and Serverless Microservice Architectures.
-        </p>
-        <h1>Contact Information</h1>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <a href="index.html" class="logo">Temkin </a>
+
+
+      
+      
+      
+      <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><strong>Birthday:</strong> 16 Feb, 2000</li>
-          <li><strong>Phone:</strong> +251 934 257 234</li>
-          <li><strong>Email:</strong> chapimenge3@gmail.com</li>
-          <li><strong>City:</strong> Addis Abeba, Ethiopia</li>
-          <li><strong>Age:</strong> 23
-          <li>
-          <li><strong>Degree:</strong> Bachelor of science</li>
-          <li><strong>Freelance:</strong> Available on Upwork and Toptal</li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+          <li><a href="testinomial">testinomial</a></li>
         </ul>
-      </div>
-    </div>
-  </section>
-  <!-- ----- Portfolio ------ -->
-<div id="portfolio">
-  <section class="portfolio">
-    <h2 class="center">Portfolio -My past work samples</h2>
-    <div class="button--container show">
-      <button class="filter--button active" onclick="filterSelection('all')">All</button>
-      <button class="filter--button " onclick="filterSelection('web')">Web development</button>
-      <button class="filter--button" onclick="filterSelection('bot')">Bot</button>
-      <button class="filter--button" onclick="filterSelection('scraping')">Scraping Automation</button>
-    </div>
-    <div class="portfolio--content">
-      <div class="item bot">
-        <h3>InvestPenny StockBot</h3>
-        <img src="image/investpennystock.png" alt="">
-        <div class="detailP">
-          <p>This is a Telegram Bot that will help you invest in penny stocks.</p>
-          <button class="detailButton" onclick="showMore('.investpenny')">Detail</button>
-        </div>
-      </div>
-      <div class="item web">
-        <h3>Giddyops Details</h3>
-        <img src="image/giddyops.png" alt="">
-        <div class="detailP">
-          <p>A central hub to manage your schedule, customers, workers, leads, and day-to-day
-            operations efficiently.
-          </p>
-          <button class="detailButton" onclick="showMore('.Giddyops')">Detail</button>
-        </div>
-      </div>
-      <div class="item web bot">
-        <h3>Telegram Marketing</h3>
-        <img src="image/telegram_marketing.jpg" alt="">
-        <div class="detailP">
-          <p>This Software Automatically Creates Accounts on all of the platform and
-            messages the intended messages to the intended accounts.</p>
-          <button class="detailButton" onclick="showMore('.marketing')">Detail</button>
-        </div>
-      </div>
-      <div class="item web bot">
-        <h3>Legion Bot</h3>
-        <img src="image/legionbot.jpg" alt="">
-        <div class="detailP">
-          <p>This Project allows the client run a private telegram channel
-            to collect recurring payments from users.
-          </p>
-          <button class="detailButton" onclick="showMore('.legion')">Detail</button>
-        </div>
-      </div>
-      <div class="item bot">
-        <h3>FluentEnglish Bot </h3>
-        <img src="image/FluentEnglish_bot.jpg" alt="">
-        <div class="detailP">
-          <p>allows users to check their English text for grammar, spelling and punctuation errors.</p>
-          <button class="detailButton" onclick="showMore('.fluent')">Detail</button>
-        </div>
-      </div>
-      <div class="item bot">
-        <h3>BuzzoidsBot</h3>
-        <img src="image/BuzzoidsBot.jpg" alt="">
-        <div class="detailP">
-          <p> with this project you can promote your social media.</p>
-          <button class="detailButton" onclick="showMore('.buzzoids')">Detail</button>
-        </div>
-      </div>
-      <div class="item web bot">
-        <h3>CherryPay Bot Details</h3>
-        <img src="image/CherryPay.png" alt="">
-        <div class="detailP">
-          <p>CherryPay is a web-based platform that specializes in peer to peer money transfer.</p>
-          <p class="optional"> This bot manages the CherryPay Telegram Group.</p>
-          <button class="detailButton" onclick="showMore('.cherryPay')">Detail</button>
-        </div>
-      </div>
-      <div class="item web">
-        <h3>Auto-Shay Backend</h3>
-        <img src="image/auto-shay.png" alt="">
-        <div class="detailP">
-          <p>This project is for Auto-Shay company's internal Backend System</p>
-          <button class="detailButton" onclick="showMore('.auto-shay')">Detail</button>
-        </div>
-      </div>
-      <div class="item scraping">
-        <h3>Telegram Automation </h3>
-        <img src="image/telegram_automation.png" alt="">
-        <div class="detailP">
-          <p>This Automation is intended to create automated telegram accounts
-            using 3rd party phone number verification services.
-          </p>
-          <button class="detailButton" onclick="showMore('.tgAutomation')">Detail</button>
-        </div>
-      </div>
-      <div class="item web bot">
-        <h3>RoyalRocket Bot/Game</h3>
-        <img src="image/RoyalRocket.jpg" alt="">
-        <div class="detailP">
-          <p>RoyalRocket is a new gambling game.</p>
-          <p class="optional">In which, YOU can win any bet. Fast bets, instant payouts. This is a new generation
-            gambling game.
-            The game is built on a 100% fair system, which is currently the only real guarantee of fairness in the
-            gaming industry.
-          </p>
-          <button class="detailButton" onclick="showMore('.rocket')">Detail</button>
-        </div>
-      </div>
-      <div class="item web bot">
-        <h3>Resale Savage Bot</h3>
-        <img src="image/resalesavage.jpg" alt="">
-        <div class="detailP">
-          <p>Resale Savage bot is a Telegram bot that helps users to find the best price for their property.</p>
-          <p class="optional">It will notify the user as soon as the Item is released for sale in private selling
-            market. The private selling market notify
-            the user through email and our bot will notify the uses as soon the messages are sent to the email.</p>
-          <button class="detailButton" onclick="showMore('.Resale')">Detail</button>
-        </div>
-      </div>
-      <div class="item bot">
-        <h3>Custom Bot</h3>
-        <img src="image/filterbot.jpeg" alt="">
-        <div class="detailP">
-          <p>This Custom Telegram bot will filter and delete the message that contained filtered messages.
-          </p>
-          <p class="optional">Simple and Easy to use for a specific purposed.</p>
-          <button class="detailButton" onclick="showMore('.filterbot')">Detail</button>
-        </div>
-      </div>
-    </div>
-  </section><!-- portfolio -->
-  <section class="portfolio--detail"> <!--  portfolio detail -->
-    <div class="detailPara Giddyops">
-      <div class="head">
-        <button class="detailButton" onclick="Back()">&lt;&lt;Back</button>
-        <h1>Giddyops Backend Project</h1>
-      </div>
-      <div class="detail--info">
-        <div class="port--card project--view ">
-        </div>
-        <div class="port--card">
-          <h2>Project Information</h2>
-          <ul>
-            <li><strong>Category: </strong>Backend Development</li>
-            <li><strong>Client: </strong>Giddyops</li>
-            <li><strong>Project date: </strong>Jan 24, 2022</li>
-          </ul>
-        </div>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-        <div class="port--card">
-          <p>Development stack</p>
-          <ul>
-            <li>Developed by using Serverless Framework</li>
-            <li>Developed on AWS Lambda</li>
-            <li>Used Python, MySQL and Docker</li>
-          </ul>
-        </div>
-        <div class="port--card">
-          <p>Feature: Branded Mobile App</p>
-          <ul>
-            <li>Give your clients a convenient way to place orders/book appointments
-              on the go with a custom branded app.</li>
-            <li>Easy order/ appointment scheduling</li>
-            <li>Real-time order/ appointment tracking</li>
-            <li>Scheduled orders/ appointments and service history</li>
-            <li>Payment and account management</li>
-          </ul>
-        </div>
-        <div class="port--card">
-          <p>Feature: Robust Admin Panel</p>
-          <ul>
-            <li>A central hub to manage your schedule, customers, workers,
-              leads, and day-to-day operations efficiently. Centralized dashboard
-              with at-a-glance key performance indicators.
-            </li>
-            <li>Customer Relationship Manager with lead tracking</li>
-            <li>Visual KPI dashboards with real-time data updates</li>
-            <li>Order Management with worker assignment, tracking, and payment processing</li>
-            <li>Custom Report builder to track, compare and analyze essential data</li>
-            <li>Support Management with Ticket processing and communication center</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="detailPara marketing">
-
-      <div class="head">
-        <button class="detailButton" onclick="Back()">&lt;&lt;Back</button>
-        <h1>Telegram Marketing</h1>
-      </div>
-      <div class="detail--info">
-        <div class="port--card project--view ">
-        </div>
-        <div class="port--card">
-          <h2>Project Information</h2>
-          <ul>
-            <li><strong>Category: </strong>Social Media Marketing</li>
-            <li><strong>Client: </strong>Patrick Riley</li>
-            <li><strong>Project date: </strong>June 11, 2021</li>
-          </ul>
-        </div>
-        <div class="port--card">
-          <p>This Project is a very large Social Media Marketing Software
-            integrated with Telegram, Reddit, and Twitter. This Software Automatically
-            Creates Accounts on all of the platform and messages the intended messages to the intended accounts.
-            This Software is very easy to use and very powerful. It implemented a lot of features such as:
-          </p>
-          <ul>
-            <li>Mass Messaging</li>
-            <li>Mass Account Creation</li>
-            <li>Mass Invite to Group</li>
-            <li>By Pass Captcha</li>
-            <li>Control Mass Group Management</li>
-          </ul>
-          <p>It includes a very powerful admin panel that
-            can be used to manage the accounts and groups.</p>
-        </div>
-      </div>
-    </div>
-    <div class="detailPara investpenny">
-      <div class="head">
-        <button class="detailButton" onclick="Back()">&lt;&lt;Back</button>
-        <h1>InvestPennyStockBot</h1>
-      </div>
-      <div class="detail--info">
-        <div class="port--card project--view ">
-        </div>
-        <div class="port--card">
-          <h2>Project information</h2>
-          <ul>
-            <li><strong>Category: </strong>Telegram Bot</li>
-            <li><strong>Client: </strong>Hitesh Saini</li>
-            <li><strong>Project date: </strong>May 16, 2021</li>
-          </ul>
-        </div>
-        <div class="port--card">
-          <h3>InvestPennyStockBot</h3>
-          <p>This is a Telegram Bot that will help you invest in penny stocks.
-            The Bot Manages Private Telegram Group with Subscriptions. The Bot is integrated
-            with PayPal Payment
-            System and Stripe Payment System for Processing Subscriptions.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="detailPara legion">
-      <div class="head">
-        <button class="detailButton" onclick="Back()">&lt;&lt;Back</button>
-        <h1>Legion Bot</h1>
-      </div>
-      <div class="detail--info">
-        <div class="port--card project--view ">
-        </div>
-        <div class="port--card">
-          <h2>Project information</h2>
-          <ul>
-            <li><strong>Category: </strong>Telegram Bot</li>
-            <li><strong>Client: </strong>Legions</li>
-            <li><strong>Project date: </strong>June 11, 2021</li>
-          </ul>
-        </div>
-        <div class="port--card">
-          <h3>Legion Bot</h2>
-            <p>This Project is a Telegram Bot that allows the client run a private
-              telegram channel to collect recurring payments from users. The bot is
-              created using the Python programming language. This bot allows the user
-              to pay through Crypto Currency such as Bitcoin,
-              Ethereum, Litecoin, Ripple, etc and Stripe Payment system.
-            </p>
-        </div>
-      </div>
-    </div>
-    <div class="detailPara fluent">
-
-      <div class="head">
-        <button class="detailButton" onclick="Back()">&lt;&lt;Back</button>
-        <h1>FluentEnglish Bot </h1>
-      </div>
-      <div class="detail--info">
-        <div class="port--card project--view ">
-        </div>
-        <div class="port--card">
-          <h2>Project information</h2>
-          <ul>
-            <li><strong>Category: </strong>Telegram Bot</li>
-            <li><strong>Client: </strong>GOODCLIENT LTD</li>
-            <li><strong>Project Link: </strong>FluentEnglish_bot</li>
-            <li><strong>Project date: </strong>May 26, 2021</li>
-          </ul>
-        </div>
-        <div class="port--card">
-          <h3>FluentEnglish Bot Details</h3>
-          <p>FluentEnglish 🤖. With the help of a bot, our handpicked native
-            English speakers, professional editors and proofreaders will be able
-            to check your English text for grammar, spelling and punctuation errors.
-            Everything is very simple. It is Integrated with Stripe Payment system.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="detailPara buzzoids">
-      <div class="head">
-        <button class="detailButton" onclick="Back()">&lt;&lt;Back</button>
-        <h1>BuzzoidsBot</h1>
-      </div>
-      <div class="detail--info">
-        <div class="port--card project--view ">
-        </div>
-        <div class="port--card">
-          <h2>Project information</h2>
-          <ul>
-            <li><strong>Category: </strong>Telegram Bot</li>
-            <li><strong>Client: </strong>GOODCLIENT LTD</li>
-            <li><strong>Project date: </strong>May 20, 2021</li>
-          </ul>
-        </div>
-        <div class="port--card">
-          <h3>BuzzoidsBot</h3>
-          <p>BuzzoidsBot with it you can promote your social media (Instagram, Telegram, TikTok,
-            Facebook, etc), you can order the subscribers, likes, views, adding to favorites,
-            etc. SMM service - subscribers, comments, likes, views in social networks.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="detailPara cherryPay">
-      <div class="head">
-        <button class="detailButton" onclick="Back()">&lt;&lt;Back</button>
-        <h1>CherryPay Bot</h1>
-      </div>
-      <div class="detail--info">
-        <div class="port--card project--view ">
-        </div>
-        <div class="port--card">
-          <h2>Project information</h2>
-          <ul>
-            <li><strong>Category: </strong>Telegram Bot</li>
-            <li><strong>Client: </strong>CherryPay</li>
-            <li><strong>Project Link: </strong><a href="https://t.me/cherrypayapp">CherryPay</a></li>
-            <li><strong>Project date: </strong>June 25, 2021</li>
-          </ul>
-        </div>
-        <div class="port--card">
-          <h3>CherryPay Bot Details</h3>
-          <p>
-            CherryPay is a web-based platform that specializes in peer to peer
-            money transfer. This bot manages the CherryPay Telegram Group</p>
-        </div>
-      </div>
-    </div>
-    <div class="detailPara tgAutomation">
-      <div class="head">
-        <button class="detailButton" onclick="Back()">&lt;&lt;Back</button>
-        <h1>Telegram Automation</h1>
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
 
-      <div class="detail--info">
-        <div class="port--card project--view ">
-        </div>
-        <div class='port--card'>
-          <h2>Project information</h2>
-          <ul>
-            <li><strong>Category: </strong>Telegram Automation</li>
-            <li><strong>Client: </strong>Noice Sami</li>
-            <li><strong>Project Link: </strong>CherryPay</li>
-            <li><strong>Project date: </strong>June 25, 2021</li>
-          </ul>
-        </div>
-        <div class="port--card">
-          <h3>Telegram Automation Details</h3>
-          <p>This Automation is intended to create automated telegram accounts
-            using 3rd party phone number verification services. It will create
-            and used for sending bulk messages to telegram users from public
-            groups. This Project will be used for broadcasting telegram messages
-            to massive number of users in the telegram group.
-          </p>
-        </div>
-      </div>
     </div>
-    <div class="detailPara auto-shay">
 
-      <div class="head">
-        <button class="detailButton" onclick="Back()">&lt;&lt;Back</button>
-        <h1>Auto-Shay Backend</h1>
-      </div>
-      <div class="detail--info">
-        <div class="port--card project--view ">
-        </div>
-        <div class="port--card">
-          <h2>Project information</h2>
-          <ul>
-            <li><strong>Category: </strong>Backend Development</li>
-            <li><strong>Client: </strong>Auto Shay</li>
-            <li><strong>Project date: </strong>June 1, 2021</li>
-          </ul>
-        </div>
-        <div class="port--card">
-          <h2>Auto-Shay Backend</h2>
-          <p>Auto-Shay is car rental Company based on Israel. This project is for
-            their internal Backend System.</p>
-        </div>
-      </div>
-    </div>
-    <div class="detailPara Resale">
+  </header><!-- End Header -->
 
-      <div class="head">
-        <button class="detailButton" onclick="Back()">&lt;&lt;Back</button>
-        <h1>Resale Savage Bot </h1>
-      </div>
-      <div class="detail--info">
-        <div class="port--card project--view ">
-        </div>
-        <div class="port--card">
-          <h2> Project information</h2>
-          <ul>
-            <li><strong>Category: </strong>Telegram Bot, Website, Email Automation</li>
-            <li><strong>Client: </strong>Jay Ballentine</li>
-            <li><strong>Project date: </strong>October 7, 2021</li>
-          </ul>
-        </div>
-        <div class="port--card">
-          <h3>Resale Savage Bot Details</h3>
-          <p>
-            Resale Savage bot is a Telegram bot that helps users to find the best price for
-            their property. It will notify the user as soon as the Item is released for sale
-            in private selling market. The private selling market notify the user through
-            email and our bot will notify the uses as soon the messages are sent to the email.
-          </p>
-        </div>
-      </div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Temkin Mengistu</h1>
+      <h2>I'm Backend Developer, Python Developer</h2>
+      <a href="about.html" class="btn-about">About Me</a>
     </div>
-    <div class="detailPara rocket">
-      <div class="head">
-        <button class="detailButton" onclick="Back()">&lt;&lt;Back</button>
-        <h1>RoyalRocket Bot/Game </h1>
-      </div>
-      <div class="detail--info">
-        <div class="port--card project--view ">
-        </div>
-        <div class="port--card">
-          <h2>Project information</h2>
-          <ul>
-            <li><strong>Category: </strong>Telegram Game and Website</li>
-            <li><strong>Client: </strong>GOODCLIENT LTD</li>
-            <li><strong>Project Link: </strong><a href="#">RoyalRocket</a></li>
-            <li><strong>Project date: </strong>July 10, 2021</li>
-          </ul>
-        </div>
-        <div class="port--card">
-          <h3>RoyalRocket Bot/Game Details</h3>
-          <p>
-            👑 RoyalRocket is a new gambling game. In which, YOU can win any bet. Fast bets,
-            instant payouts. This is a new generation gambling game. It makes it possible to
-            win many times more in a matter of seconds compared to other games. The game is
-            built on a 100% fair system, which is currently the only real guarantee of
-            fairness in the gaming industry.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="detailPara filterbot">
+  </section><!-- End Hero -->
 
-      <div class="head">
-        <button class="detailButton" onclick="Back()">&lt;&lt;Back</button>
-        <h1>Custom Bot</h1>
-      </div>
-      <div class="detail--info">
-        <div class="port--card project--view ">
-        </div>
-        <div class="port--card">
-          <h2>Project information</h2>
-          <ul>
-            <li><strong>Category: </strong>Telegram Bot</li>
-            <li><strong>Client: </strong>Stefan Thonhofer</li>
-            <li><strong>Project date: </strong>November 26, 2021</li>
-          </ul>
-        </div>
-        <div class="port--card">
-          <h2>Custom Bot Details</h2>
-          <p>This Custom Telegram bot will filter and delete the message that
-            contained filtered messages. Simple and Easy to use for a specific purposed.
-          </p>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section><!--  portfolio detail -->
-  </div><!-- portfolio -->
-  <script src="project.js"></script>
+  <!-- ======= Footer ======= -->
+  <!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
