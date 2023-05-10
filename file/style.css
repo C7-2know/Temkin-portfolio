@@ -351,3 +351,104 @@
     width: 80%;
   }
 }
+.body_2{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #ced4da;
+    -webkit-text-size-adjust: 100%;
+    margin-top: auto;
+}
+.col{
+    padding:10px;
+
+}
+/* ul{
+    display:none;
+} */
+.card-body{
+    background-color: rgb(231, 231, 236);
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.5rem;
+}
+.card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.8rem;
+  transition: all 0.5s;
+  display: inline-block;
+  width: 100%;
+}
+.card:hover{
+  transform: scale(0.9);
+}
+#my-map-display img{
+  max-width:none!important;
+  background:none!important;
+  font-size: inherit;
+  font-weight:inherit;
+}
+#detail_1,#detail_2,#detail_3,#detail_4,#detail_5,#detail_6{
+  display: none;
+}
+#detailB_1,#detailB_2,#detailB_3,#detailB_4,#detailB_5,#detailB_6{
+  margin-top: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 70%;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgb(161, 136, 145);
+}
+/************************************ FONTS ************************************/
+@import url("https://use.typekit.net/ovt6ynt.css");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Spectral:wght@200;300;400;500;600;700;800&display=swap");
+
+.card,
+.body_2 {
+  display: flex;
+}
+
+.card > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+.card-title {
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 500 !important;
+  font-style: normal;
+}
+
+
+/* contact */
+#responce{
+  display: none;
+}
+
+
+
+
+
+
+
+
